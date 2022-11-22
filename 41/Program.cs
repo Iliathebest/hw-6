@@ -8,10 +8,7 @@ Console.WriteLine("Введите числа через   , ");
 int size= Convert.ToInt32(Console.ReadLine());
 
  int sum = 0;       
-
-     int[] array = GetArray(size);
-      int[] GetArray(int size1)
-        {
+        
            int[] array = new int[size];
             for (int i = 0; i < size1; i++)
             {
@@ -21,6 +18,6 @@ int size= Convert.ToInt32(Console.ReadLine());
                    sum++;
                   }
             } return array;
-        } 
-            Console.WriteLine(string.Join(",",array)); 
+        
+             Console.WriteLine(string.Join(",",array)); 
              Console.WriteLine("Сумма чисел больше 0 равна"+ sum);
